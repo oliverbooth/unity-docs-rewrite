@@ -1,0 +1,22 @@
+﻿{
+  "name": "unity-docs-rewrite",
+  "description": "An attempt to rewrite Unity engine documentation in the style of MSDN.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Oliver Booth",
+    "email": "me@olivr.me",
+    "url": "https://oliverbooth.dev"
+  },
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliverbooth/unity-docs-rewrite"
+  },
+  "bugs": {
+    "url": "https://github.com/oliverbooth/unity-docs-rewrite/issues"
+  },
+  "dependencies": {
+  }
+}
