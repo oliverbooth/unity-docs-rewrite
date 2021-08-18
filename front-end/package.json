@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "unity-docs-rewrite",
   "description": "An attempt to rewrite Unity engine documentation in the style of MSDN.",
   "version": "1.0.0",
@@ -17,6 +17,18 @@
   "bugs": {
     "url": "https://github.com/oliverbooth/unity-docs-rewrite/issues"
   },
-  "dependencies": {
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "node-sass": "^6.0.1",
+    "typescript": "^4.2.4",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^6.1.2"
   }
 }
