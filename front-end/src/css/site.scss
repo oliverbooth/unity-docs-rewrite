@@ -1,3 +1,81 @@
-﻿html, body {
-  background-color: #171717;
+﻿@import "_layout";
+@import "_typography";
+
+$msdn-black: #171717;
+$msdn-white: #d2d2d2;
+$warning: #6a4b16;
+$important: #004173;
+$unity-primary: #2196f3;
+
+html, body, .bg-msdn {
+  background-color: $msdn-black;
+  color: $msdn-white;
+}
+
+.disclaimer-banner {
+  background-color: $important;
+  color: $msdn-white;
+  padding: 1rem 0;
+}
+
+
+.navbar {
+  border-bottom: 1px solid #404040 !important;
+  margin-bottom: 0 !important;
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    .nav-link {
+      font-size: .875rem;
+
+      &.active > :first-child, &:hover > :first-child {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          border-bottom: 2px solid $msdn-white;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -.125rem;
+        }
+      }
+
+      &.title {
+        font-size: 1.125rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .nav-item.category {
+    margin: 0 .5rem;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 1.5rem;
+      border-left: 2px solid $msdn-white;
+      margin-left: 0.5rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.hero-primary {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  
+  padding: 3rem 0;
+  
+  background-color: darken($unity-primary, 10%);
+  outline-color: #fff;
+  color: #fff;
 }
