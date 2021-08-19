@@ -7,6 +7,21 @@ Many people find the existing Unity documentation to be lackluster with poorly w
 
 MSDN is considered by many to be a prime example of documentation done right. With this project, it is aspired that Unity developers will be able to find consistency and reliability in better-written and better-structured documentation.
 
+## Building
+This project makes use of both .NET 5 and Node build pipelines.
+
+The front-end static files (JS, CSS) are found within the `front-end` directory, and can be built with `npm build`.
+The ASP.NET Core project can be built with `dotnet build`.
+
+There is a Node script which will pull files from `front-end/dist` to `UnityDocs/wwwroot` named `copy2csproj`. 
+As such, a full build configuration should run the following tasks.
+
+```sh
+$ npm run build
+$ npm run copy2csproj
+$ dotnet build
+```
+
 ## Contributing
 Contributions will be welcome in the near future. Watch this space.
 
